@@ -1,30 +1,54 @@
 body {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
     width: 100%;
-    font-family: Helvetica, sans-serif;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
     background-color: #0B2D59;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 1.5rem;
     color: #085CA6;
 }
 
-header, label{
+h1,
+header {
+    font-family: 'Montserrat', serif;
+}
+
+body h1 {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border: 0.5rem black solid;
+}
+body h1 p {
+    color: black;
+    margin: 0 auto;
+}
+
+header {
     margin: auto;
 }
 
-.layer2{
+label {
+    margin: 1.5rem auto;
+}
+
+.layer2 {
     display: flex;
-    position: fixed;
-    align-self: flex-end;
+    flex-direction: column;
+    height: 80%;
     width: 80%;
     background-color: black;
-    margin: 1rem auto;
+    margin: auto;
     padding: 1rem;
     border-radius: 3%;
 }
 
-.layer2 .button{
-margin: auto
+.layer2 .button {
+    margin: auto;
 }
 
 form {
