@@ -1,9 +1,11 @@
 body {
+    display: flex;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, serif;
-    background-color: darkblue;
+    font-family: Helvetica, sans-serif;
+    background-color: #0B2D59;
     font-size: 11px;
-    color: red;
+    font-weight: 600;
+    color: #085CA6;
 }
 
 header, label{
@@ -12,10 +14,13 @@ header, label{
 
 .layer2{
     display: flex;
+    position: fixed;
+    align-self: flex-end;
     width: 80%;
     background-color: black;
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
+    border-radius: 3%;
 }
 
 .layer2 .button{
@@ -26,5 +31,9 @@ form {
     display: inline-flex;
     flex-direction: column;
     margin: auto;
+    border-radius: 3%;
 }
 
+.button {
+    padding: 1rem;
+}
