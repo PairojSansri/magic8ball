@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, serif;
+    background-color: darkblue;
+    font-size: 11px;
+    color: red;
+}
+
+header, label{
+    margin: auto;
+}
+
+.layer2{
+    display: flex;
+    width: 80%;
+    background-color: black;
+    margin: auto;
+    padding: 1rem;
+}
+
+.layer2 .button{
+margin: auto
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+}
+
