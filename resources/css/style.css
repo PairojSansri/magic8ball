@@ -7,13 +7,15 @@ body {
     align-items: center;
     font-family: 'Oswald', sans-serif;
     background-color: #0B2D59;
-    font-size: 1.5rem;
     color: #085CA6;
 }
 
-h1,
+label,
 header {
     font-family: 'Montserrat', serif;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 body h1 {
@@ -36,7 +38,7 @@ label {
     margin: 1.5rem auto;
 }
 
-.layer2 {
+.queryBox {
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -47,7 +49,7 @@ label {
     border-radius: 3%;
 }
 
-.layer2 .button {
+.queryBox .button {
     margin: auto;
 }
 
@@ -60,4 +62,9 @@ form {
 
 .button {
     padding: 1rem;
+}
+
+/*Hidden for mobile*/
+.answerBox {
+    display: none;
 }
