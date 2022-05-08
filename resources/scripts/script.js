@@ -1,6 +1,7 @@
 //This connects the javascript elements with the html
 const userName = document.getElementById('userName');
 const userInput = document.getElementById('userInput');
+const question = document.getElementById('question');
 const userQuestion = document.getElementById('userQuestion');
 const magicReply = document.getElementById('magicReply');
 const queryBox = document.getElementById('queryBox');
