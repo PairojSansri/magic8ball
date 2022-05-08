@@ -1,21 +1,22 @@
 body {
-    display: inline-flex;
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
     margin: auto;
-    align-items: center;
     font-family: 'Oswald', sans-serif;
     background-color: #0B2D59;
     color: white;
 }
 
-label,
 header {
+    color: #085ca6;
     font-family: 'Montserrat', serif;
-    text-shadow: -2px 0 #085CA6, 0 2px #085CA6, 2px 0 #085CA6, 0 -2px #085CA6;
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 body h1 {
@@ -25,6 +26,7 @@ body h1 {
     width: 100%;
     border: 0.5rem black solid;
 }
+
 body h1 p {
     color: black;
     margin: 0 auto;
@@ -36,17 +38,37 @@ header {
 
 label {
     margin: 1.5rem auto;
+    font-size: 1.15rem;
+}
+
+#queryBox,
+#answerBox {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    width: 225px;
+    height: 225px;
+    font-size: .55rem;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: black;
+    height: 350px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
 }
 
 .queryBox {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    background-color: black;
+    background-color: white;
     margin: auto;
-    padding: 1rem;
-    border-radius: 3%;
-    box-shadow: -10px 10px white;
+    border-radius: 50%;
 }
 
 .queryBox .button {
@@ -66,13 +88,39 @@ form {
 
 /*Hidden for mobile*/
 .answerBox {
-    display: flex;
+    display: none;
     flex-direction: column;
-    width: 80%;
     background-color: black;
-    margin: 2rem auto;
-    padding: 1rem;
-    border-radius: 3%;
-    box-shadow: -10px 10px white;
+    margin: auto;
+    border-radius: 50%;
+    transition-duration: 400ms;
     align-items: center;
+    justify-content: center;
+}
+
+.answerBox p {
+    font-size: .65rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .boxes {
+        display: inline-flex;
+        padding: 1rem;
+        width: 450px;
+        height: 450px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .queryBox,
+    .answerBox {
+        width: 300px;
+        height: 300px;
+        margin: 3rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.25rem;
+    }
 }

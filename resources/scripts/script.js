@@ -1,8 +1,10 @@
 //This connects the javascript elements with the html
 const userName = document.getElementById('userName');
-const question = document.getElementById('question');
+const userInput = document.getElementById('userInput');
 const userQuestion = document.getElementById('userQuestion');
 const magicReply = document.getElementById('magicReply');
+const queryBox = document.getElementById('queryBox');
+const answerBox = document.getElementById('answerBox');
 
 //Eight-ball functionality
 let randomNumber = Math.floor(Math.random() * 8);
@@ -41,4 +43,13 @@ const submitBut = document.getElementById('submitBut');
 submitBut.onclick = () => {
     userQuestion.innerHTML = `${userName.value} asked the 8-ball: ${question.value}?`;
     magicReply.innerHTML = `The magic 8-ball says: ${eightBall}`;
+    function hideInput() {
+        userInput.style.display = 'none'
+    };
+    function showAnsBox() {
+        answerBox.style.display = 'flex';
+        queryBox.style.display = 'none';
+    }
+    setTimeout(showAnsBox, 400);
+    setTimeout(hideInput, 400);
 }
