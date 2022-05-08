@@ -106,20 +106,23 @@ form {
 
     .boxes {
         display: inline-flex;
-        width: 450px;
-        height: 450px;
+        width: 550px;
+        height: 550px;
         align-items: center;
         justify-content: center;
     }
 
-    .queryBox,
-    .answerBox {
-        width: 400px;
-        height: 420px;
+    #queryBox,
+    #answerBox {
+        width: 300px;
+        height: 300px;
         margin: 3rem;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        font-size: 1.5rem;
+    }
+
+    #answerBox p {
+        font-size: .85rem;
     }
 }
