@@ -8,8 +8,11 @@ body {
     height: 100%;
     margin: auto;
     font-family: 'Oswald', sans-serif;
-    background-color: #0B2D59;
+    background-image: url("./resources/images/magic/magic8ball_loading.png");
+    background-position: center;
+    background-size: contain;
     color: white;
+    background-color: purple;
 }
 
 header {
@@ -42,23 +45,37 @@ label {
 }
 
 #queryBox,
-#answerBox {
+#answerBox, {
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
-    width: 225px;
-    height: 225px;
+    color: White;
     font-size: .55rem;
+    height: 250px;
+    width: 100%;
+    background-color: #2C8257;
+    border: brown 25px solid;
+}
+
+#userInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#eightBallImg {
+    width: 50vw;
+    height: 50vw;
+    margin: 1 auto;
+    position: static;
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
     border-radius: 50%;
-    background-color: black;
-    height: 350px;
-    width: 350px;
+
     align-items: center;
     justify-content: center;
 }
@@ -66,9 +83,10 @@ label {
 .queryBox {
     display: flex;
     flex-direction: column;
-    background-color: white;
     margin: auto;
-    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .queryBox .button {
@@ -87,13 +105,15 @@ form {
 }
 
 /*Hidden for mobile*/
-.answerBox {
+#answerBox {
     display: none;
     flex-direction: column;
     background-color: black;
-    margin: auto;
-    border-radius: 50%;
-    transition-duration: 400ms;
+    margin: 30px auto;
+    height: 250px;
+    width: 100vw;
+    background-color: #2C8257;
+    border: brown 25px solid;
     align-items: center;
     justify-content: center;
 }
@@ -104,22 +124,28 @@ form {
 
 @media only screen and (min-width: 1024px) {
 
+    #eightBallImg {
+        width: 25vw;
+        height: 25vw;
+        margin: auto;
+        display: flex;
+        align-self: center;
+    }
+
     .boxes {
         display: inline-flex;
-        width: 550px;
-        height: 550px;
         align-items: center;
         justify-content: center;
     }
 
     #queryBox,
     #answerBox {
-        width: 300px;
-        height: 300px;
+        height: 200px;
+        width: 700px;
         margin: 3rem;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        
     }
 
     #answerBox p {

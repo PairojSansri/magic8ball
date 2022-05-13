@@ -16,31 +16,27 @@
 
 <body>
     <h1>
-        <p>Pairoj's</p>
+        <p>Pairoj's Magic 8-Ball</p>
     </h1>
     <div class="boxes">
+        <img src="./resources/images/magic/magic8ball_loading.png" id="eightBallImg" alt="Eightball image">
         <div class="queryBox" id="queryBox">
-            <header>Magic 8 ball</header>
             <form action="magicAnswers.html" method="GET">
+                <div id="userInput">
+                        <label for="question" id="question">Enter your name:</label>
+                        <textarea name="userName" id="userName" rows="1" cols="30" placeholder="Eazy-E"></textarea>
+                        <div class="button" id="button">
+                            <input type="button" value="Submit" id="submitBut">
+                        </div>
+                </div>
                 <label for="question">Ask me anything!</label>
                 <textarea name="question" id="question" rows="3" cols="8" placeholder="Magic 8-Ball knows all"></textarea>
                 </form>
-            </form>
         </div>
         <div class="answerBox" id="answerBox">
             <p id="userQuestion"></p>
             <p id="magicReply"></p>
         </div>
-    </div>
-    <div id="userInput">
-        <form>
-            <label for="question" id="question">Enter your name:</label>
-            <textarea name="userName" id="userName" rows="1" cols="7" placeholder="Eazy-E"></textarea>
-            <div class="button" id="button">
-                <input type="button" value="Submit" id="submitBut">
-            </div>
-        </form>
-    </div>
 </body>
 
 </html>
