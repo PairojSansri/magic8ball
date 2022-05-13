@@ -12,7 +12,7 @@ body {
     background-position: center;
     background-size: contain;
     color: white;
-    background-color: purple;
+    background-color: #00076D;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
 body h1 {
     display: inline-flex;
     flex-direction: column;
+    color: #00076D;
     background-color: white;
     width: 100%;
     border: 0.5rem black solid;
